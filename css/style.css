@@ -1,0 +1,200 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Forum', cursive;
+    font-size: 48px;
+    color: #272727;
+}
+
+.hidden{
+    overflow: hidden;
+    position: absolute;
+    width: 0;
+    height: 0;
+    margin: -1px;
+}
+
+a{
+    text-decoration: none;
+    color: #272727;
+}
+
+ul{
+    list-style: none;
+}
+/* начало блока заголовка */
+
+
+.columns{
+    display: flex;
+}
+
+.left-column{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: #FFFFFF;
+    width: 62%;
+    padding: 60px 0 0 11.3%;
+}
+.right-column{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 38%;
+    background: #272727;
+    color: #FFFFFF;
+    padding: 60px 11.3% 0 0;
+}
+
+.brand-name{
+    position: relative;
+    margin-bottom: 326px;
+}
+
+.brand-name a{
+    font-size: 38px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+
+.brand-name span.upper{
+    font-size: 42px;
+}
+
+.letterWithMoon{
+    position: absolute;
+    left: 85px;
+    top: 15px;
+    z-index: 2;
+}
+.description-collection{
+    margin-bottom: 367px;
+}
+
+.description-collection>p{ 
+    text-transform: uppercase;
+    font-size: 64px;
+    line-height: 70px;
+    margin-bottom: 50px;
+}
+.description-collection a{
+    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 24px;
+}
+.wrapper-line{
+    display: flex;
+    flex-direction: row;
+    padding-left: 120px;
+    column-gap: 38px;
+    /* align-items: center; */
+}
+
+.line{
+    width: 150px;
+    height: 14px;
+    border-bottom: 1px solid #272727;
+}
+
+.language-change{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    line-height: 21px;
+    text-transform: uppercase;
+    margin-bottom: 60px;
+}
+
+.language-change a{
+    color: #C4C4C4;
+}
+
+.language-change a:focus{
+    color: #272727;
+}
+
+.main-nav{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 100px;
+}
+
+.main-nav a{
+    color: #FFFFFF;
+    display: block;
+}
+
+
+.main-nav .icon{
+    width: 25px;
+    height: 25px;
+    display: block;
+}
+
+.icon-menu{
+    align-items: center;
+    display: flex;
+    column-gap: 40px;
+}
+
+.basket{
+    display: flex;
+}
+
+.basket .custom-count{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+}
+
+.icon-menu .icon-liked{
+    background: url("../img/liked.png") no-repeat;
+}
+
+.icon-menu .icon-profile{
+    background: url("../img/profile.png") no-repeat;
+}
+.icon-menu .icon-basket{
+    background: url("../img/basket.png") no-repeat;
+}
+
+.burger-menu .icon-burger{
+    background: url("../img/burger.png") no-repeat;
+    width: 50px;
+    height: 50px;
+}
+
+.description-ring{
+    text-align: right;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    margin-bottom: 60px;
+}
+
+.first-ring-stroka{
+    margin-bottom: 9px;
+    line-height: 20px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+
+}
+.second-ring-stroka{
+    margin-bottom: 9px;
+    line-height: 23px;
+    color: #c2c2c2;
+}
+.third-ring-stroka{
+    line-height: 24px;
+    color: #EFC58B;
+}
+
+.ring-image{
+    position: absolute;
+    top: 397px;
+    left: 746px;
+
+}
