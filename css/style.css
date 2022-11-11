@@ -26,8 +26,11 @@ a{
 ul{
     list-style: none;
 }
-/* начало блока заголовка */
 
+/* начало блока заголовка */
+.site-header{
+    margin-bottom: 20px;
+}
 
 .columns{
     display: flex;
@@ -196,5 +199,71 @@ ul{
     position: absolute;
     top: 397px;
     left: 746px;
-
 }
+
+/* конец блока заголовка */
+
+/* начало блока main */
+
+.chapter-wrapper{
+    background-color: #FFFFFF;
+    margin-bottom: 20px;
+}
+
+.chapter-columns{
+    display: flex;
+    column-gap: 20px;
+}
+
+.for-men, .for-women{
+    width: 710px;
+    height: 587px;
+    text-align: center;
+    padding-top: 247px;
+}
+
+.chapter-columns a{
+    color: #FFFFFF;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.chapter-columns h2{
+    color: #FFFFFF;
+    font-size: 64px;
+    line-height: 70px;
+    font-weight: normal;
+}
+
+.chapter-columns .line{
+    border-bottom: 1px solid #FFFFFF;
+}
+
+
+.for-men{
+    background: 
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url(../img/men.png);
+    
+}
+
+.for-women{
+    background: 
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url(../img/women.png);
+}
+
+
+.for-men .line{
+    margin-left: 288px;
+}
+
+.for-women .line{
+    margin-left: 296px;
+}
+/* .for-men, .for-women{
+    background-image: url(../img/background.png);
+    background-size: 710px 587px;
+}  */
+/* конец блока main */
