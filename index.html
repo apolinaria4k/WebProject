@@ -15,7 +15,6 @@
 <body>
     <header class="site-header">
         <div class="wrapper">
-            <img class="ring-image" src="img/ring.png" alt="кольцо">
             <div class="columns">
                 <div class="left-column">
                     <div class="brand-name">
@@ -38,6 +37,7 @@
                         <a href="#">en</a>
                     </div>
                 </div>
+                <div class="ring"></div>
                 <div class="right-column">
                     <nav class="main-nav">
                         <ul class="icon-menu">
@@ -67,9 +67,9 @@
                         </ul>
                     </nav>
                     <div class="description-ring">
-                        <p class="first-ring-stroka">Кольцо Trinity, Cartier</p>
-                        <p class="second-ring-stroka">Белое золото, бриллианты</p>
-                        <p class="third-ring-stroka"><i> 498 000 ₽</i></p>
+                        <p class="first-description-stroka">Кольцо Trinity, Cartier</p>
+                        <p class="second-description-stroka">Белое золото, бриллианты</p>
+                        <p class="third-description-stroka"><i>498 000 ₽</i></p>
                     </div>
                 </div>
             </div>
@@ -78,19 +78,15 @@
     <main>
         <div class="chapter-wrapper">
             <section class="chapter-columns">
-                <div class="background">
-                    <div class="for-men">
-                        <a href="#">Перейти в раздел</a>
-                        <h2>Для мужчин</h2>
-                        <div class="line"></div>
-                    </div>
+                <div class="for-men">
+                    <a href="#">Перейти в раздел</a>
+                    <h2>Для мужчин</h2>
+                    <div class="line secondLine"></div>
                 </div>
-                <div class="background">
-                    <div class="for-women">
-                        <a href="#">Перейти в раздел</a>
-                        <h2>Для женщин</h2>
-                        <div class="line"></div>
-                    </div>
+                <div class="for-women">
+                    <a href="#">Перейти в раздел</a>
+                    <h2>Для женщин</h2>
+                    <div class="line secondLine"></div>
                 </div>
             </section>
         </div>
@@ -98,9 +94,44 @@
             <div></div>
             <div></div>
         </section>
-        <section>
-            <div></div>
-            <div></div>
+        <section class="catalog">
+            <div class="grid-container">
+                <div class="grid-item">
+                    <div class="description">
+                        <p class="first-description-stroka">Кольцо Jow's, Cartier</p>
+                        <p class="second-description-stroka">Белое золото, бриллианты</p>
+                        <p class="third-description-stroka"><i>674 000 ₽</i></p>
+                    </div> 
+                </div>
+                <div class="grid-item">
+                    <div class="description">
+                        <p class="first-description-stroka">Кольцо Croix, Cartier</p>
+                        <p class="second-description-stroka">Желтое золото, розовое золото</p>
+                        <p class="third-description-stroka"><i>432 000 ₽</i></p>  
+                    </div>
+                </div>
+                <div class="grid-item necklace">
+                    <div class="description">
+                        <p class="first-description-stroka">Колье Trinity, Hublot</p>
+                        <p class="second-description-stroka">Белое золото, бриллианты</p>
+                        <p class="third-description-stroka"><i>539 000 ₽</i></p>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <div class="description">
+                        <p class="first-description-stroka">Серьги Moon, Hublot</p>
+                        <p class="second-description-stroka">Белое золото, сапфир</p>
+                        <p class="third-description-stroka"><i>498 000 ₽</i></p>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <div class="description">
+                        <p class="first-description-stroka">Серьги Win, Blancpain</p>
+                        <p class="second-description-stroka">Желтое золото, жемчуг</p>
+                        <p class="third-description-stroka"><i>398 000 ₽</i></p>
+                    </div>
+                </div>
+            </div>
         </section>
         <section>
             <div>
@@ -113,10 +144,31 @@
                 <div></div>
             </div>
         </section>
-        <section>
-            <div></div>
-            <div></div>
-            <div></div>
+        <section class="follow-wrapper">
+            <div class="image"></div>
+            <div class="news-wrapper">
+                <div class="news">
+                    <div class="number">
+                        <p>Телефон флагманского магазина</p>
+                        <a href="tel:">+ 7 800 456 456</a>
+                    </div>
+                    <div class="follow-news">
+                        <p>Подпишитесь на новости</p>
+                        <form class="subscribe-news" action="mailto:">
+                            <div class="inputAndButton">
+                                <div>
+                                    <label for="mail" class="hidden">Почта</label>
+                                    <input type="text" name="mail" id="mail" placeholder="Введите E-mail">
+                                </div>
+                                <div>
+                                    <button type="submit" class="btn"></button>
+                                </div>
+                            </div>
+                            
+                        </form>
+                    </div>
+                </div>
+            </div>
         </section>
         <section>
             <div></div>

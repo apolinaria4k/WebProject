@@ -34,6 +34,7 @@ ul{
 
 .columns{
     display: flex;
+    /* background: url(../img/ring.png) no-repeat; */
 }
 
 .left-column{
@@ -52,6 +53,15 @@ ul{
     background: #272727;
     color: #FFFFFF;
     padding: 60px 11.3% 0 0;
+}
+
+.ring{
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    top: 397px;
+    left: 746px;
+    background: url(../img/ring.png) no-repeat;
 }
 
 .brand-name{
@@ -178,48 +188,48 @@ ul{
     margin-bottom: 60px;
 }
 
-.first-ring-stroka{
+.first-description-stroka{
     margin-bottom: 9px;
     line-height: 20px;
     color: #FFFFFF;
     text-transform: uppercase;
-
 }
-.second-ring-stroka{
+
+.second-description-stroka{
     margin-bottom: 9px;
     line-height: 23px;
     color: #c2c2c2;
 }
-.third-ring-stroka{
+.third-description-stroka{
     line-height: 24px;
     color: #EFC58B;
 }
 
-.ring-image{
-    position: absolute;
-    top: 397px;
-    left: 746px;
-}
 
 /* конец блока заголовка */
 
 /* начало блока main */
-
+/* начало первого блока */
 .chapter-wrapper{
     background-color: #FFFFFF;
     margin-bottom: 20px;
+
+    background:
+         linear-gradient(to right, rgba(0, 0, 0, 0.5) 49%, #FFFFFF 49% 51%, rgba(0, 0, 0, 0.5) 50% 100%),
+         url(../img/men.png) no-repeat, url(../img/women.png) no-repeat right;
 }
 
 .chapter-columns{
     display: flex;
-    column-gap: 20px;
+    justify-content: space-around;
+    width: 100%;
+    height: 587px;
+    align-items: center;
+
 }
 
 .for-men, .for-women{
-    width: 710px;
-    height: 587px;
     text-align: center;
-    padding-top: 247px;
 }
 
 .chapter-columns a{
@@ -236,34 +246,199 @@ ul{
     font-weight: normal;
 }
 
-.chapter-columns .line{
+.secondLine{
+    display: inline-flex;
     border-bottom: 1px solid #FFFFFF;
+    margin-bottom: 20px;
+}
+/* конец первого блока */
+
+
+/* начало третьего (catalog) блока */
+.grid-container{
+    display: grid;
+    grid-template-columns: 400px 600px 400px;
+    grid-template-rows: 400px 400px;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.grid-item{
+    width: 400px;
+    height: 400px;
+    background-color: #EDEDED;
+}
+
+.necklace{
+    width: 600px;
+    height: 820px;
+    background-image: url(../img/necklace.png);
+}
+
+.necklace .description{
+    padding: 714px 0 20px 30px;
+}
+
+.necklace .description .first-description-stroka{
+    color: #FFFFFF;
+}
+
+.necklace .description .second-description-stroka{
+    color: #e7e7e7;
+}
+
+.necklace .description .third-description-stroka{
+    color: #EFC58B;
 }
 
 
-.for-men{
-    background: 
-        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-        url(../img/men.png);
-    
+.description{
+    padding: 294px 0 20px 30px;
+    text-align: left;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
 }
 
-.for-women{
-    background: 
-        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-        url(../img/women.png);
+.description .first-description-stroka{
+    color: #272727;
+}
+
+.description .second-description-stroka{
+    color: #727272;
+}
+
+.description .third-description-stroka{
+    color: #E2B67A;
 }
 
 
-.for-men .line{
-    margin-left: 288px;
+.grid-item:first-child{
+    grid-column: 1/2;
 }
 
-.for-women .line{
-    margin-left: 296px;
+.grid-item:first-child::before{
+    position: absolute;
+    content: "";
+    width: 400px;
+    height: 400px;
+    background: url(../img/firstRing.png) no-repeat top 47px left 70px;
 }
-/* .for-men, .for-women{
-    background-image: url(../img/background.png);
-    background-size: 710px 587px;
-}  */
+
+.grid-item:nth-child(2){
+    grid-row-start: 2;
+    grid-column: 1/2;
+}
+
+.grid-item:nth-child(2)::before{
+    position: absolute;
+    content: "";
+    width: 400px;
+    height: 400px;
+    background: url(../img/secondRing.png) no-repeat top 47px left 70px;
+}
+
+.grid-item:nth-child(3){
+    grid-column-start: 2;
+    grid-row: 1/3;
+}
+
+.grid-item:nth-child(4){
+    grid-column: 3/4;
+}
+
+.grid-item:nth-child(4)::before{
+    position: absolute;
+    content: "";
+    width: 400px;
+    height: 400px;
+    background: url(../img/firstEarrings.png) no-repeat bottom 110px left 40px;
+}
+
+.grid-item:last-child{
+    grid-row-start: 2;
+    grid-column: 3/4;
+}
+
+.grid-item:last-child::before{
+    position: absolute;
+    content: "";
+    width: 400px;
+    height: 400px;
+    background: url(../img/secondEarrings.png) no-repeat bottom 100px left 50px;
+}
+
+/* конец третьего (catalog) блока */
+
+/* начало блока с телефоном и почтой */
+
+.follow-wrapper{
+    display: flex;
+    height: 640px;
+    background-color: #FFFFFF;
+}
+
+.image{
+    content: "";
+    width: 50%;
+    background: url(../img/greenWoman.png) no-repeat;
+}
+
+.news-wrapper{
+    width: 50%;
+    text-align: center;
+    padding: 180px 0 0 183px;
+}
+.news{
+    display: flex;
+    flex-direction: column;
+    row-gap: 110px;
+    text-align: left;    
+}
+.number, .follow-news{
+    text-align: left;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.number p, .follow-news p{
+    text-transform: uppercase;
+    font-size: 18px;
+    line-height: 23px;
+}
+
+.number a{
+    color: #959595;
+    font-size: 22px;
+    line-height: 28px;
+}
+
+.inputAndButton{
+    width: min-content;
+    display: flex;
+    border-bottom: 1px solid #272727;
+}
+
+.inputAndButton input{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 22px;
+    line-height: 28px;
+    border: #FFFFFF;
+}
+
+.inputAndButton input:focus{
+    outline: #FFFFFF;
+}
+
+.btn{
+    position: relative;
+    top: 2px;
+    left: -10px;
+    width: 40px;
+    height: 17px;
+    border: none;
+    cursor: pointer;
+    background: url(../img/arrow.png) no-repeat;
+}
+
+/* конец блока с телефоном и почтой */
+
 /* конец блока main */
