@@ -253,6 +253,56 @@ ul{
 }
 /* конец первого блока */
 
+/* начало блока с картой */
+.store-map{
+    margin-bottom: 20px;
+}
+
+.find-store{
+    width: 49%;
+    padding: 171px 162px;
+    background-color: #272727;
+    color: #FFFFFF;
+}
+
+.find{
+    margin-bottom: 16px;
+}
+
+.adress{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    line-height: 23px;
+}
+
+.store-map .inputAndButton{
+    width: 386px;
+    /* padding-bottom: 10px; */
+    border-bottom: 1px solid #FFFFFF;
+}
+
+.store-map .inputAndButton input{
+    font-size: 18px;
+    line-height: 23px;
+    border: #272727;
+    background: #272727;
+}
+
+.store-map .inputAndButton input:focus{
+    outline: #272727;
+}
+
+.store-map .btn{
+    position: relative;
+    top: 2px;
+    left: 150px;
+    width: 40px;
+    height: 17px;
+    border: none;
+    cursor: pointer;
+    background: url(../img/arrowWhite.png) no-repeat;
+}
+/* конец блока с картой */
 
 /* начало третьего (catalog) блока */
 .grid-container{
@@ -369,6 +419,92 @@ ul{
 
 /* конец третьего (catalog) блока */
 
+/* начало блока со слайдером */
+.social-slider{
+    padding: 100px 0;
+    background-color: #272727;
+}
+
+.title{
+    color: #FFFFFF;
+    padding: 0 11.3%;
+}
+
+.down-slider{ 
+    padding: 0 11.3%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.slider-nav{
+    display: flex;
+    column-gap: 50px;
+}
+
+.slide-previous{
+    position: relative;
+    width: 52px;
+    height: 30px;
+    border: none;
+    cursor: pointer;
+    background: url(../img/leftArrow.png) no-repeat;
+}
+
+.slider-nav button.slide-previous{
+    float: left;
+}
+
+.slider-nav button.slide-next{
+    float: right;
+}
+
+.slide-next{
+    position: relative;
+    width: 52px;
+    height: 30px;
+    border: none;
+    cursor: pointer;
+    background: url(../img/rightArrow.png) no-repeat;
+}
+
+.dots{
+    display: flex;
+    align-items: center;
+    column-gap: 17px;
+}
+
+.dot{
+    content: "";
+    width: 8px;
+    height: 8px;
+    background-color: #656565;
+    border-radius: 50%;
+}
+
+/* слайдер */
+.slider{
+    width: 100%;
+    overflow: hidden;
+    margin: 80px 0;
+}
+
+.slider-wrapper{
+    width: 9999px;
+    height: 385px;
+    position: relative;
+    transition: left 500ms linear;
+}
+
+.slide{
+    float: left;
+    position: relative;
+    width: fit-content;
+    height: 385px;
+}
+/* конец слайдера */
+
+/* конец блока со слайдером */
+
 /* начало блока с телефоном и почтой */
 
 .follow-wrapper{
@@ -412,7 +548,7 @@ ul{
 }
 
 .inputAndButton{
-    width: min-content;
+    width: 280px;
     display: flex;
     border-bottom: 1px solid #272727;
 }
@@ -428,7 +564,7 @@ ul{
     outline: #FFFFFF;
 }
 
-.btn{
+.follow-wrapper .btn{
     position: relative;
     top: 2px;
     left: -10px;
@@ -442,3 +578,140 @@ ul{
 /* конец блока с телефоном и почтой */
 
 /* конец блока main */
+
+/* начало блока footer */
+.footer-wrapper{
+    display: flex;
+    flex-direction: column;
+    padding: 80px 11.3%;
+    background: #272727;
+}
+
+.footer-nav{
+    margin-bottom: 90px;
+}
+
+.footer-menu{
+    display: flex;
+    flex-direction: row;
+    column-gap: 72px;
+}
+
+
+.footer-menu a{
+    color: #FFFFFF;
+    display: block;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.socialmedia{
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .brand-name{
+    margin: 0;
+}
+
+footer .brand-name a{
+    color: #FFFFFF;
+}
+
+footer .number{
+    display: flex;
+    row-gap: 15px;
+    flex-direction: column;
+    font-size: 14px;
+    line-height: 18px;
+    color: #FFFFFF;
+}
+
+.socials{
+    display: flex;
+    column-gap: 80px;
+}
+
+footer .number a{
+    font-size: 18px;
+    line-height: 23px;
+    color: #C2C2C2;   
+}
+
+.socialmedia-icons {
+    display: flex;
+    column-gap: 20px;
+}
+
+.socialmedia-icons .icon{
+    width: 35px;
+    height: 35px;
+    display: block;
+}
+
+.socialmedia-icons .facebook{
+    background: url(../img/Facebook.png) no-repeat;
+}
+
+.socialmedia-icons .instagram{
+    background: url(../img/Instagram.png) no-repeat;
+}
+
+footer .follow-news{
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    color: #FFFFFF;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+footer .inputAndButton{
+    padding-bottom: 10px;
+    border-bottom: 1px solid #FFFFFF;
+}
+
+footer .inputAndButton input{
+    font-size: 18px;
+    line-height: 23px;
+    border: #272727;
+    background: #272727;
+}
+
+.inputAndButton input:focus{
+    outline: #272727;
+}
+
+.btn{
+    position: relative;
+    top: 2px;
+    left: 45px;
+    width: 40px;
+    height: 17px;
+    border: none;
+    cursor: pointer;
+    background: url(../img/arrowWhite.png) no-repeat;
+}
+
+.instal-icons{
+    display: flex;
+    column-gap: 20px;
+}
+
+.instal-icons .icone{
+    width: 120px;
+    height: 40px;
+    display: block;
+}
+
+.instal-icons .apple{
+    background: url(../svg/appStore.svg) no-repeat;
+}
+
+.instal-icons .google{
+    width: 140px;
+    background: url(../svg/googlePlay.svg) no-repeat;
+}
+/* конец блока footer */

@@ -14,6 +14,125 @@
 </head>
 <body>
     <header class="site-header">
+        <div class="big-navigation">
+            <div class="brand-name">
+                <img class="letterWithMoon" src="img/Vector.png" alt="месяц">
+                <a href="#">
+                    <span class="upper">M</span>oon <span class="upper">R</span>iver
+                </a>
+            </div>
+            <nav class="main-nav">
+                <ul class="icon-menu">
+                    <li>
+                        <a href="#" class="icon icon-liked">
+                            <span class="hidden">избранное</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="icon icon-profile">
+                            <span class="hidden">профиль</span>
+                        </a>
+                    </li>
+                    <li class="basket">
+                        <a href="#" class="icon icon-basket">
+                            <span class="hidden">корзина</span>
+                        </a>
+                        <p class="custom-count">1</p>
+                    </li>
+                </ul>
+                <ul class="burger-menu">
+                    <li>
+                        <a href="#" class="icon icon-burger">
+                            <span class="hidden">меню</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div>
+                <ul>
+                    <li><a href="#"><span>ювелирные изделия</span></a></li>
+                    <li><a href="#"><span>Часы</span></a></li>
+                    <li><a href="#"><span>Ароматы</span></a></li>
+                    <li><a href="#"><span>Бренды</span></a></li>
+                    <li><a href="#"><span>Изделия из кожи</span></a></li>
+                    <li><a href="#"><span>Свадебные украшения</span></a></li>
+                    <li><a href="#"><span>Другое</span></a></li>
+                </ul>
+            </div>
+            <div>
+                <nav class="">
+                    <a href="#" class="">для кого</a>
+                    <ul class="">
+                        <li><a href="#">для женщин</a></li>
+                        <li><a href="#">для мужчин</a></li>
+                        <li><a href="#">для детей</a></li>
+                    </ul>
+                </nav>
+                <nav class="">
+                    <a href="#" class="">категории</a>
+                    <ul class="">
+                        <li><a href="#">Кольца</a></li>
+                        <li><a href="#">Браслеты</a></li>
+                        <li><a href="#">колье</a></li>
+                        <li><a href="#">Серьги</a></li>
+                        <li><a href="#">Броши</a></li>
+                    </ul>
+                </nav>
+                <nav class="">
+                    <a href="#" class="">МАтериал</a>
+                    <ul class="">
+                        <li><a href="#">Изделия с бриллиантами</a></li>
+                        <li><a href="#">Желтое золото</a></li>
+                        <li><a href="#">Белое золото</a></li>
+                        <li><a href="#">Розовое золото</a></li>
+                    </ul>
+                </nav>
+                <nav class="">
+                    <a href="#" class="">Бренд</a>
+                    <ul class="">
+                        <li><a href="#">mercury</a></li>
+                        <li><a href="#">Chopard</a></li>
+                        <li><a href="#">Cartier</a></li>
+                        <li><a href="#">Graff</a></li>
+                        <li><a href="#">Garrard</a></li>
+                        <li><a href="#">Показать все бренды</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div>
+                <div>
+
+                </div>
+                <div>
+                    <div class="number">
+                        <p>Телефон горячей линии</p>
+                        <a href="tel:">+7 800 456 456</a>
+                        <ul class="socialmedia-icons">
+                            <li><a class="icon facebook" href="#"><span class="hidden">Facebook</span></a></li>
+                            <li><a class="icon instagram" href="#"><span class="hidden">Instagram</span></a></li>
+                        </ul>
+                    </div>
+                    <div class="follow-news">
+                        <p>Подпишитесь на новости</p>
+                        <form class="subscribe-news" action="mailto:">
+                            <div class="inputAndButton">
+                                <div>
+                                    <label for="mail" class="hidden">Почта</label>
+                                    <input type="text" name="mail" id="mail" placeholder="Введите E-mail">
+                                </div>
+                                <div>
+                                    <button type="submit" class="btn"></button>
+                                </div>
+                            </div>
+                        </form>
+                        <ul class="instal-icons">
+                            <li><a class="icone apple" href="#"><span class="hidden">App Store</span></a></li>
+                            <li><a class="icone google" href="#"><span class="hidden">Google PLay</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="wrapper">
             <div class="columns">
                 <div class="left-column">
@@ -90,9 +209,23 @@
                 </div>
             </section>
         </div>
-        <section>
-            <div></div>
-            <div></div>
+        <section class="store-map">
+            <div class="find-store">
+                <p class="find">Найди<br> бутик около себя</p>
+                <p class="adress">Введите свой адрес и узнайте о самых ближайших бутиках к вам</p>
+                <form class="subscribe-news" action="">
+                    <div class="inputAndButton">
+                        <div>
+                            <label for="search" class="hidden">Поиск</label>
+                            <input type="text" name="search" id="search" placeholder="Введите адрес">
+                        </div>
+                        <div>
+                            <button type="submit" class="btn"></button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="map"></div>
         </section>
         <section class="catalog">
             <div class="grid-container">
@@ -133,15 +266,48 @@
                 </div>
             </div>
         </section>
-        <section>
-            <div>
-                <div></div>
-                <div></div>
+        <section class="social-slider">
+            <div class="title">
+                <p>Мы<br> в социальных сетях</p>
             </div>
-            <div></div>
-            <div>
-                <div></div>
-                <div></div>
+            <div class="slider" id="main-slider">
+                <ul class="slider-wrappper">
+                    <li class="slide">
+                        <img class="slide" src="img/first.png" alt="first">
+                    </li>
+                    <li class="slide">
+                        <img class="slide" src="img/second.png" alt="second">
+                    </li>
+                    <li class="slide">
+                        <img class="slide" src="img/third.png" alt="third">
+                    </li>
+                    <li class="slide">
+                        <img class="slide" src="img/fourth.png" alt="fourth">
+                    </li>
+                    <li class="slide">
+                        <img class="slide" src="img/fifth.png" alt="fifth">
+                    </li>
+                </ul>
+            </div>
+            <div class="down-slider">
+                <ul class="socialmedia-icons">
+                    <li><a class="icon facebook" href="#"><span class="hidden">Facebook</span></a></li>
+                    <li><a class="icon instagram" href="#"><span class="hidden">Instagram</span></a></li>
+                </ul>
+                <div class="slider-nav">
+                    <button type="button" class="slide-previous">
+                    </button>
+                    <div class="dots">
+                        <p class="dot"></p>
+                        <p class="dot"></p>
+                        <p class="dot"></p>
+                        <p class="dot"></p>
+                        <p class="dot"></p>
+                        <p class="dot"></p>
+                    </div>
+                    <button type="button" class="slide-next">
+                    </button>
+                </div>
             </div>
         </section>
         <section class="follow-wrapper">
@@ -150,7 +316,7 @@
                 <div class="news">
                     <div class="number">
                         <p>Телефон флагманского магазина</p>
-                        <a href="tel:">+ 7 800 456 456</a>
+                        <a href="tel:">+7 800 456 456</a>
                     </div>
                     <div class="follow-news">
                         <p>Подпишитесь на новости</p>
@@ -164,24 +330,61 @@
                                     <button type="submit" class="btn"></button>
                                 </div>
                             </div>
-                            
                         </form>
                     </div>
                 </div>
             </div>
         </section>
-        <section>
-            <div></div>
-            <div></div>
-        </section>
     </main>
     <footer>
-        <div>
-            <nav>
-                
+        <div class="footer-wrapper">
+            <nav class="footer-nav">
+                <ul class="footer-menu">
+                    <li><a href="#">Работа в компании</a></li>
+                    <li><a href="#">Условия пользования</a></li>
+                    <li><a href="#">Выходные данные</a></li>
+                    <li><a href="#">Политика конфиденциальности</a></li>
+                    <li><a href="#">Карта сайта</a></li>
+                </ul>
             </nav>
+            <div class="socialmedia">
+                <div class="brand-name">
+                    <img class="letterWithMoon" src="img/Vector.png" alt="месяц">
+                    <a href="#">
+                        <span class="upper">M</span>oon <span class="upper">R</span>iver
+                    </a>
+                </div>
+                <div class="socials">
+                    <div class="number">
+                        <p>Телефон горячей линии</p>
+                        <a href="tel:">+7 800 456 456</a>
+                        <ul class="socialmedia-icons">
+                            <li><a class="icon facebook" href="#"><span class="hidden">Facebook</span></a></li>
+                            <li><a class="icon instagram" href="#"><span class="hidden">Instagram</span></a></li>
+                        </ul>
+                    </div>
+                    <div class="follow-news">
+                        <p>Подпишитесь на новости</p>
+                        <form class="subscribe-news" action="mailto:">
+                            <div class="inputAndButton">
+                                <div>
+                                    <label for="mail" class="hidden">Почта</label>
+                                    <input type="text" name="mail" id="mail" placeholder="Введите E-mail">
+                                </div>
+                                <div>
+                                    <button type="submit" class="btn"></button>
+                                </div>
+                            </div>
+                        </form>
+                        <ul class="instal-icons">
+                            <li><a class="icone apple" href="#"><span class="hidden">App Store</span></a></li>
+                            <li><a class="icone google" href="#"><span class="hidden">Google PLay</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div></div>
+        
     </footer>
 </body>
 </html>
