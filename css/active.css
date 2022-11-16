@@ -1,0 +1,70 @@
+.watch-collection:hover{
+    font-size: 24px;
+}
+
+.watch-collection:active{
+  color: #EFC58B;
+}
+
+.icon-menu .icon:hover{
+  scale: 1.5;
+}
+
+.burger-menu .icon:hover{
+  scale: 1.5;
+}
+
+.for-men .chapter:hover{
+  font-size: 36px;
+}
+
+.for-men .chapter:active{
+  color: #EFC58B;
+}
+
+
+.for-women .chapter:hover{
+  font-size: 36px;
+}
+.for-women .chapter:active{
+  color: #EFC58B;
+}
+
+/* .inputAndButton input:focus{
+  color: #FFFFFF;
+} */
+
+.btn:hover, .btn:active{
+  scale: 1.5;
+}
+
+.grid-item:hover{
+  scale: 1.1;
+  border: 1px solid #272727;
+  cursor: pointer;
+}
+
+.facebook:hover, .facebook:active{
+  scale: 1.5;
+}
+
+.instagram:hover, .instagram:active{
+  scale: 1.5;
+}
+
+.news-wrapper .news .number a:hover{
+  font-size: 36px;
+  color: #272727;
+}
+
+.footer-menu a:hover{
+ border-bottom: 1px solid #FFFFFF;
+}
+
+.socials .number a:hover{
+  color: #E2B67A;
+}
+
+.slide-next:hover, .slide-previous:hover{
+  scale: 1.5;
+}
